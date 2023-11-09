@@ -47,6 +47,8 @@ packages/chat-bubble/chat-bubble*
 .pnpm-store/
 
 .dev/databerry/app.env
+docker/docker.env
+/docker/docker.env
 .config
 .cache
 .npm
