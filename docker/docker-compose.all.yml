@@ -21,7 +21,7 @@ services:
 
   qdrant:
     image: qdrant/qdrant:v1.6.1
-    mem_limit: 450m
+    mem_limit: 8500m
     ports:
       - '127.0.0.1:${QDRANT_PORT}:6333'
     volumes:
