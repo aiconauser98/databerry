@@ -179,12 +179,21 @@ importers:
       eslint-config-custom:
         specifier: workspace:*
         version: link:../../packages/eslint-config-custom
+      fathom-client:
+        specifier: ^3.6.0
+        version: 3.6.0
       file-saver:
         specifier: ^2.0.5
         version: 2.0.5
       hash-wasm:
         specifier: ^4.9.0
         version: 4.9.0
+      i18next:
+        specifier: ^23.6.0
+        version: 23.6.0
+      i18next-browser-languagedetector:
+        specifier: ^7.1.0
+        version: 7.1.0
       ioredis:
         specifier: ^5.3.1
         version: 5.3.2
@@ -209,6 +218,9 @@ importers:
       mime-types:
         specifier: ^2.1.35
         version: 2.1.35
+      mixpanel-browser:
+        specifier: ^2.47.0
+        version: 2.47.0
       msgpackr:
         specifier: ^1.9.3
         version: 1.9.3
@@ -251,6 +263,9 @@ importers:
       pino-pretty:
         specifier: ^10.2.0
         version: 10.2.0
+      posthog-js:
+        specifier: ^1.88.4
+        version: 1.88.4
       puppeteer-core:
         specifier: 10.1.0
         version: 10.1.0
@@ -272,6 +287,9 @@ importers:
       react-hot-toast:
         specifier: ^2.4.1
         version: 2.4.1(csstype@3.1.2)(react-dom@18.2.0)(react@18.2.0)
+      react-i18next:
+        specifier: ^13.3.1
+        version: 13.3.1(i18next@23.6.0)(react-dom@18.2.0)(react@18.2.0)
       react-infinite-scroller:
         specifier: ^1.2.6
         version: 1.2.6(react@18.2.0)
@@ -348,6 +366,9 @@ importers:
       '@types/mime-types':
         specifier: ^2.1.1
         version: 2.1.1
+      '@types/mixpanel-browser':
+        specifier: ^2.47.5
+        version: 2.47.5
       '@types/multer':
         specifier: ^1.4.7
         version: 1.4.7
@@ -572,6 +593,37 @@ importers:
         specifier: ^10.0.0
         version: 10.0.0(eslint@8.36.0)
 
+  packages/integrations:
+    dependencies:
+      '@chaindesk/lib':
+        specifier: workspace:*
+        version: link:../lib
+      '@chaindesk/prisma':
+        specifier: workspace:*
+        version: link:../prisma
+      next:
+        specifier: 13.5.4
+        version: 13.5.4(@babel/core@7.22.9)(react-dom@18.2.0)(react@18.2.0)
+    devDependencies:
+      '@chaindesk/tsconfig':
+        specifier: workspace:*
+        version: link:../tsconfig
+      '@types/react':
+        specifier: 18.0.29
+        version: 18.0.29
+      '@types/react-dom':
+        specifier: 18.0.11
+        version: 18.0.11
+      eslint-config-custom:
+        specifier: workspace:*
+        version: link:../eslint-config-custom
+      react:
+        specifier: 18.2.0
+        version: 18.2.0
+      typescript:
+        specifier: 5.0.2
+        version: 5.0.2
+
   packages/lib:
     dependencies:
       '@axiomhq/pino':
@@ -649,6 +701,9 @@ importers:
       mime-types:
         specifier: ^2.1.35
         version: 2.1.35
+      mixpanel:
+        specifier: ^0.18.0
+        version: 0.18.0
       msgpackr:
         specifier: ^1.9.3
         version: 1.9.3
@@ -5673,6 +5728,10 @@ packages:
     resolution: {integrity: sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==}
     dev: true
 
+  /@types/mixpanel-browser@2.47.5:
+    resolution: {integrity: sha512-qEKrYSN4nUCPLU39YCoF2vszON0KUkPox0mFlrvhdq+amE44CB25+rdfZV4M9n3pEggXuRH+fbdP9qxthvyFUw==}
+    dev: true
+
   /@types/ms@0.7.31:
     resolution: {integrity: sha512-iiUgKzV9AuaEkZqkOLDIvlQiL6ltuZd9tGcW3gwpnX8JbuiuhFlEGmmFXEXkN50Cvq7Os88IY2v0dkDqXYWVgA==}
     dev: false
@@ -9559,6 +9618,10 @@ packages:
     dependencies:
       reusify: 1.0.4
 
+  /fathom-client@3.6.0:
+    resolution: {integrity: sha512-/mrgmVvpw4HqDCcqUfPulERhONKgnJGL74RAxfqKDuRQ+7w9lKoTHMzqBWE7WNBvmsgZEthQWJFOWOEjv+T3gA==}
+    dev: false
+
   /fault@1.0.4:
     resolution: {integrity: sha512-CJ0HCB5tL5fYTEA7ToAq5+kTwd++Borf1/bifxd9iT70QcXr4MRrO3Llf8Ifs70q+SJcGHFtnIE/Nw6giCtECA==}
     dependencies:
@@ -9605,6 +9668,10 @@ packages:
 
   /fetch-retry@5.0.6:
     resolution: {integrity: sha512-3yurQZ2hD9VISAhJJP9bpYFNQrHHBXE2JxxjY5aLEcDi46RmAzJE2OC9FAde0yis5ElW0jTTzs0zfg/Cca4XqQ==}
+    dev: false
+
+  /fflate@0.4.8:
+    resolution: {integrity: sha512-FJqqoDBR00Mdj9ppamLa/Y7vxm+PRmNWA67N846RvsoYVMKB4q3y/de5PA7gUmRMYK/8CMz2GDZQmCRN1wBcWA==}
     dev: false
 
   /fflate@0.7.4:
@@ -10622,6 +10689,12 @@ packages:
     resolution: {integrity: sha512-H2iMtd0I4Mt5eYiapRdIDjp+XzelXQ0tFE4JS7YFwFevXXMmOp9myNrUvCg0D6ws8iqkRPBfKHgbwig1SmlLfg==}
     dev: true
 
+  /html-parse-stringify@3.0.1:
+    resolution: {integrity: sha512-KknJ50kTInJ7qIScF3jeaFRpMpE8/lfiTdzf/twXyPBLAGrLRTmkz3AdTnKeh40X8k9L2fdYwEp/42WGXIRGcg==}
+    dependencies:
+      void-elements: 3.1.0
+    dev: false
+
   /html-react-parser@3.0.9(react@18.2.0):
     resolution: {integrity: sha512-gOPZmaCMXNYu7Y9+58k2tLhTMXQ+QN8ctNFijzLuBxJaLZ6TsN+tUpN+MhbI+6nGaBCRGT2rpw6y/AqkTFZckg==}
     peerDependencies:
@@ -10834,6 +10907,18 @@ packages:
     engines: {node: '>=14'}
     hasBin: true
     dev: true
+
+  /i18next-browser-languagedetector@7.1.0:
+    resolution: {integrity: sha512-cr2k7u1XJJ4HTOjM9GyOMtbOA47RtUoWRAtt52z43r3AoMs2StYKyjS3URPhzHaf+mn10hY9dZWamga5WPQjhA==}
+    dependencies:
+      '@babel/runtime': 7.23.1
+    dev: false
+
+  /i18next@23.6.0:
+    resolution: {integrity: sha512-z0Cxr0MGkt+kli306WS4nNNM++9cgt2b2VCMprY92j+AIab/oclgPxdwtTZVLP1zn5t5uo8M6uLsZmYrcjr3HA==}
+    dependencies:
+      '@babel/runtime': 7.23.1
+    dev: false
 
   /iconv-lite@0.4.24:
     resolution: {integrity: sha512-v3MXnZAcvnywkTUEZomIActle7RXXeedOR31wwl7VlyoXO4Qi9arvSenNQWne1TcRwhCL1HwLI21bEqdpj8/rA==}
@@ -13983,6 +14068,19 @@ packages:
       through2: 2.0.5
     dev: true
 
+  /mixpanel-browser@2.47.0:
+    resolution: {integrity: sha512-Ldrva0fRBEIFWmEibBQO1PulfpJVF3pf28Guk09lDirDaSQqqU/xs9zQLwN2rL5VwVtsP1aD3JaCgaa98EjojQ==}
+    dev: false
+
+  /mixpanel@0.18.0:
+    resolution: {integrity: sha512-VyUoiLB/S/7abYYHGD5x0LijeuJCUabG8Hb+FvYU3Y99xHf1Qh+s4/pH9lt50fRitAHncWbU1FE01EknUfVVjQ==}
+    engines: {node: '>=10.0'}
+    dependencies:
+      https-proxy-agent: 5.0.0
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
   /mkdirp-classic@0.5.3:
     resolution: {integrity: sha512-gKLcREMhtuZRwRAfqP3RFW+TK4JqApVBtOIftVgjuABpAtpxhPGaDcfvbhNvD0B8iD1oUr/txX35NjcaY6Ns/A==}
     dev: false
@@ -15503,6 +15601,12 @@ packages:
       source-map-js: 1.0.2
     dev: false
 
+  /posthog-js@1.88.4:
+    resolution: {integrity: sha512-ZKgC0q22Bv0WGsi/BJcamDIoBR3DPpF26kCq0eFxtV3gKDMpGIlhlODQCo28bSENziGVO4LSeGrUvo/6OsQ7xA==}
+    dependencies:
+      fflate: 0.4.8
+    dev: false
+
   /posthtml-parser@0.10.2:
     resolution: {integrity: sha512-PId6zZ/2lyJi9LiKfe+i2xv57oEjJgWbsHGGANwos5AvdQp98i6AtamAl8gzSVFGfQ43Glb5D614cvZf012VKg==}
     engines: {node: '>=12'}
@@ -15965,6 +16069,26 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     transitivePeerDependencies:
       - csstype
+    dev: false
+
+  /react-i18next@13.3.1(i18next@23.6.0)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-JAtYREK879JXaN9GdzfBI4yJeo/XyLeXWUsRABvYXiFUakhZJ40l+kaTo+i+A/3cKIED41kS/HAbZ5BzFtq/Og==}
+    peerDependencies:
+      i18next: '>= 23.2.3'
+      react: '>= 16.8.0'
+      react-dom: '*'
+      react-native: '*'
+    peerDependenciesMeta:
+      react-dom:
+        optional: true
+      react-native:
+        optional: true
+    dependencies:
+      '@babel/runtime': 7.23.1
+      html-parse-stringify: 3.0.1
+      i18next: 23.6.0
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
     dev: false
 
   /react-infinite-scroller@1.2.6(react@18.2.0):
@@ -18512,6 +18636,11 @@ packages:
       is-buffer: 2.0.5
       unist-util-stringify-position: 3.0.3
       vfile-message: 3.1.4
+    dev: false
+
+  /void-elements@3.1.0:
+    resolution: {integrity: sha512-Dhxzh5HZuiHQhbvTW9AMetFfBHDMYpo23Uo9btPXgdYP+3T5S+p+jgNy7spra+veYhBP2dCSgxR/i2Y02h5/6w==}
+    engines: {node: '>=0.10.0'}
     dev: false
 
   /w3c-xmlserializer@4.0.0:

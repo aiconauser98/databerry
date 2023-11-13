@@ -1,5 +1,38 @@
 # Changelog
 
+<a name="0.1.70"></a>
+## 0.1.70 (2023-11-12)
+
+### Miscellaneous
+
+- 🤖 tracking plan first draft [[cf7090d](https://github.com/gmpetrov/databerry/commit/cf7090d47610c8ef871c3969cfe80f4086c7710a)]
+
+
+<a name="0.1.69"></a>
+## 0.1.69 (2023-11-11)
+
+### Fixed
+
+- 🐛 wrong he translations [[50fa506](https://github.com/gmpetrov/databerry/commit/50fa50674e017a924876d558fa3feb6ccef8fc47)]
+
+
+<a name="0.1.68"></a>
+## 0.1.68 (2023-11-11)
+
+### Miscellaneous
+
+- 🤖 analtyics setup [[6391cc6](https://github.com/gmpetrov/databerry/commit/6391cc662aa4b78653976f4bf5d8f89d3a0ee236)]
+
+
+<a name="0.1.67"></a>
+## 0.1.67 (2023-11-10)
+
+### Miscellaneous
+
+- 🤖 upgrade chatbubble version [[f1aeda8](https://github.com/gmpetrov/databerry/commit/f1aeda8959b5cccc9aeef194cabecbe07f7bdfec)]
+- 🎸 chatbubble internationalization ([#236](https://github.com/gmpetrov/databerry/issues/236)) [[42ca6ef](https://github.com/gmpetrov/databerry/commit/42ca6efb30fde674d85f6fd71dc1a12ba0091200)]
+
+
 <a name="0.1.66"></a>
 ## 0.1.66 (2023-11-09)
 
