@@ -4,7 +4,7 @@ import OpenAIApi from 'openai';
 import countTokens from './count-tokens';
 import splitTextByToken from './split-text-by-token';
 
-const MAX_TOKENS = 3072;
+const MAX_TOKENS = 15500;
 
 const structurize = async (props: {
   text: string;
