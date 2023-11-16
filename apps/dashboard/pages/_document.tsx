@@ -19,7 +19,6 @@ class CustomDocument extends Document {
     return (
       <Html>
         <Head>
-          <meta name="viewport" content="initial-scale=1, width=device-width" />
 
           <meta
             property="og:image"
